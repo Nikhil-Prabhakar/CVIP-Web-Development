@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Container */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Navbar */
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+.logo{
+    width: flex;
+    cursor: pointer;
+    display: inline-block;
+    margin: 30px 0;
+}
+
+/* Menu Icon */
+.menu-icon{
+    width:25px;
+    cursor: pointer;
+}
+.menu-icon:hover{
+    color: #ff5ea2;
+}
+
+/* Nav Items */
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+nav ul li a:hover{
+    color: #ff5ea2;
+}

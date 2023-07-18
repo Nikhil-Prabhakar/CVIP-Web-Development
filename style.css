@@ -54,3 +54,30 @@ nav ul li a{
 nav ul li a:hover{
     color: #ff5ea2;
 }
+
+/* ROW */
+.row{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+/* Colum 1 */
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-1 h2{
+    font-size: 54px;
+    color: rgb(57, 47, 105);
+}
+.col-1 h3{
+    font-size: 30px;
+}
+.col-1 p{
+    font-size: 16px;
+    color: rgb(81, 81, 82);
+    font-weight: 100;
+}

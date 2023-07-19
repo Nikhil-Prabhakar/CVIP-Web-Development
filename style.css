@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kaushan+Script&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +9,8 @@
 .container{
     width: 100%;
     min-height: 100vh;
+    padding-left: 4%;
+    padding-right: 4%;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -24,13 +27,20 @@
     width: flex;
     cursor: pointer;
     display: inline-block;
-    margin: 30px 0;
+    margin: 20px 0;
+    font-weight: 100;
+    color: rgb(57, 47, 105)
+
+}
+.logo strong{
+    font-weight: 700;
 }
 
 /* Menu Icon */
 .menu-icon{
     width:25px;
     cursor: pointer;
+    display: none;
 }
 .menu-icon:hover{
     color: #ff5ea2;
@@ -60,7 +70,7 @@ nav ul li a:hover{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin: 100px 0;
+    margin-bottom: 30px;
 }
 
 /* Colum 1 */
@@ -75,9 +85,153 @@ nav ul li a:hover{
 }
 .col-1 h3{
     font-size: 30px;
+    color: rgb(57, 47, 105);
+    font-weight: 500;
+    margin: 10px 0 10px;
 }
 .col-1 p{
     font-size: 16px;
     color: rgb(81, 81, 82);
     font-weight: 100;
+    margin: 20px 0;
+}
+
+/* Button */
+button{
+    width: 140px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    outline: none;
+    color: white;
+    background-color: rgb(154, 145, 234);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-weight: 700;
+}
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+} 
+button:hover span {
+    padding-right: 20px;
+}
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Side Bar in Colum 1 */
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 63%;
+    background: rgb(154, 145, 234);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+/* Colum 2 */
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+}
+.col-2 .hero{
+    width: 90%;
+    height: 90%;
+}
+
+/* Media Query */
+@media only screen and (max-width:700px) {
+    nav ul{
+        width: 100%;
+        background: rgb(57, 55, 104);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .row{
+        flex-direction: column-reverse;
+        transition: 0.5s;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-2 .hero{
+        width: 80%;
+    }
+    .col-1{
+        flex-basis: 100%;
+    }
+    .col-1 h2{
+        font-size: 35px;
+    }
+    .col-1 h3{
+        font-size: 23px;
+    }
+    .col-1 p{
+        margin: 30px 0;
+    }
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(Images/b3.jpeg);
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4{
+    color: #ffffff;
+    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
+}
+
+#banner h2{
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 0;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#banner h2 span{
+    color: cyan;
+    font-family: 'Kaushan Script', cursive;
 }

@@ -16,26 +16,34 @@
         <div class="navbar">
             <h1 class="logo"><i>Quote <strong>Oasis</strong></i></h1>
             <nav>
-                <ul>
+                <ul id="menuList">
                     <li><a href="">Home</a></li>
                     <li><a href="">Genre</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>
-            <i class="fa-solid fa-bars menu-icon"></i>
+            <span class="menu-icon" onclick="togglemenu()"><i class="fa-solid fa-bars"></i></span>
         </div>
 
-        <div class="row">
+        <div class="row" id="row1">
             <div class="col-1">
-                <h2>Unlock Infinite Inspiration:</h2><br>
+                <h2>Unlock Infinite <br>Inspiration:</h2><br>
                 <h3>Unleash the Power of our Quote Generator!</h3>
                 <p>Discover inspiration in every line and wisdom in every word with our powerful quote generator.</p>
+                <button><span>Let's GO</span></button>
             </div>
             <div class="col-2">
-
+                <img src="Images/Hero.jpg" alt="Hero Img" class="hero">
             </div>
         </div>
+
     </div>
+    <div id="banner">
+        <h4>Genre</h4>
+        <h2>Choose Your <span>Favourite</span> Genre</h2>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

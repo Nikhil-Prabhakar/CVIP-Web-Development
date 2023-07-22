@@ -1,14 +1,8 @@
 # CVIP Web Development Project
 
----
-
 ## Phase - 1
 
----
-
 #### Normal Task
-
----
 
 Quote Generator Website - **Quote Oasis**
 

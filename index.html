@@ -17,9 +17,9 @@
             <h1 class="logo"><i>Quote <strong>Oasis</strong></i></h1>
             <nav>
                 <ul id="menuList">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Genre</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li class="home"><a href="#row1">Home</a></li>
+                    <li class="about"><a href=".banner">Genre</a></li>
+                    <li class="contact"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <span class="menu-icon" onclick="togglemenu()"><i class="fa-solid fa-bars"></i></span>
@@ -30,18 +30,67 @@
                 <h2>Unlock Infinite <br>Inspiration:</h2><br>
                 <h3>Unleash the Power of our Quote Generator!</h3>
                 <p>Discover inspiration in every line and wisdom in every word with our powerful quote generator.</p>
-                <button><span>Let's GO</span></button>
+                <button><span><a href="#Gen">Let's GO</a></span></button>
             </div>
             <div class="col-2">
                 <img src="Images/Hero.jpg" alt="Hero Img" class="hero">
             </div>
         </div>
 
+        <div class="banner">
+            <h4>Quote</h4>
+            <h2>Choose Your <span>Quote</span> of the Day</h2>
+        </div>
+
+        <div class="container2">
+            <div class="window">
+                <header id="Gen">Quote of the Day</header>
+                <div class="page">
+                    <div class="writing-area">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p id="quote">Press the button to get a quote!</p>
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <div class="author">
+                        <span>__</span>
+                        <span class="name">Author</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="features">
+                        <ul>
+                            <li class="sound"><i class="fa-solid fa-volume-high"></i></li>
+                            <li class="copy"><i class="fa-regular fa-copy"></i></li>
+                            <li class="twitter"><i class="fa-brands fa-twitter"></i></li>
+                        </ul>
+                        <button class="btn2" onclick="getRandomQuote()">Get Random Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner c-ban">
+            <div>
+                <h4>Contact Us</h4>
+            </div>
+            <div id="contact">
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <li class="c-facebook"><i class="fa-brands fa-facebook-f"></i></li>
+                    </a>
+                    <a href="https://twitter.com/home" target="_blank" rel="noopener noreferrer">
+                        <li class="c-twitter"><i class="fa-brands fa-twitter"></i></li>
+                    </a>
+                    <a href="https://www.pinterest.com/pinterest/" target="_blank" rel="noopener noreferrer">
+                        <li class="c-pintrest"><i class="fa-brands fa-pinterest-p"></i></li>
+                    </a>
+                    <a href="https://discord.com/" target="_blank" rel="noopener noreferrer">
+                        <li class="c-discord"><i class="fa-brands fa-discord"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div id="banner">
-        <h4>Genre</h4>
-        <h2>Choose Your <span>Favourite</span> Genre</h2>
-    </div>
+
 
     <script src="script.js"></script>
 </body>

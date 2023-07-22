@@ -1,237 +1,391 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kaushan+Script&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Bad+Script&family=Kaushan+Script&&family=Lugrasimo&family=Qwigley&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 /* Container */
-.container{
-    width: 100%;
-    min-height: 100vh;
-    padding-left: 4%;
-    padding-right: 4%;
-    box-sizing: border-box;
-    overflow: hidden;
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 4%;
+  padding-right: 4%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* Navbar */
-.navbar{
-    width: 100%;
-    display: flex;
-    align-items: center;
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 /* Logo */
-.logo{
-    width: flex;
-    cursor: pointer;
-    display: inline-block;
-    margin: 20px 0;
-    font-weight: 100;
-    color: rgb(57, 47, 105)
-
+.logo {
+  width: flex;
+  cursor: pointer;
+  display: inline-block;
+  margin: 20px 0;
+  font-weight: 100;
+  color: rgb(57, 47, 105);
 }
-.logo strong{
-    font-weight: 700;
+.logo strong {
+  font-weight: 700;
 }
 
 /* Menu Icon */
-.menu-icon{
-    width:25px;
-    cursor: pointer;
-    display: none;
+.menu-icon {
+  width: 25px;
+  cursor: pointer;
+  display: none;
 }
-.menu-icon:hover{
-    color: #ff5ea2;
+.menu-icon:hover {
+  color: #ff5ea2;
 }
 
 /* Nav Items */
-nav{
-    flex: 1;
-    text-align: right;
+nav {
+  flex: 1;
+  text-align: right;
 }
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 30px;
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
 }
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
 }
-nav ul li a:hover{
-    color: #ff5ea2;
+nav ul li a:hover {
+  color: #ff5ea2;
 }
 
 /* ROW */
-.row{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
 }
 
 /* Colum 1 */
-.col-1{
-    flex-basis: 40%;
-    position: relative;
-    margin-left: 50px;
+.col-1 {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
 }
-.col-1 h2{
-    font-size: 54px;
-    color: rgb(57, 47, 105);
+.col-1 h2 {
+  font-size: 54px;
+  color: rgb(57, 47, 105);
 }
-.col-1 h3{
-    font-size: 30px;
-    color: rgb(57, 47, 105);
-    font-weight: 500;
-    margin: 10px 0 10px;
+.col-1 h3 {
+  font-size: 30px;
+  color: rgb(57, 47, 105);
+  font-weight: 500;
+  margin: 10px 0 10px;
 }
-.col-1 p{
-    font-size: 16px;
-    color: rgb(81, 81, 82);
-    font-weight: 100;
-    margin: 20px 0;
+.col-1 p {
+  font-size: 16px;
+  color: rgb(81, 81, 82);
+  font-weight: 100;
+  margin: 20px 0;
 }
 
 /* Button */
-button{
-    width: 140px;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    outline: none;
-    color: white;
-    background-color: rgb(154, 145, 234);
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.5s;
+button {
+  width: 140px;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  outline: none;
+  color: white;
+  background-color: rgb(154, 145, 234);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-    font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-weight: 700;
+}
+button span a {
+  text-decoration: none;
+  color: white;
 }
 button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-} 
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 button:hover span {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 button:hover span:after {
-    opacity: 1;
-    right: 0;
+  opacity: 1;
+  right: 0;
 }
 
 /* Side Bar in Colum 1 */
-.col-1::after{
-    content: '';
-    width: 10px;
-    height: 63%;
-    background: rgb(154, 145, 234);
-    position: absolute;
-    left: -40px;
-    top: 8px;
+.col-1::after {
+  content: "";
+  width: 10px;
+  height: 63%;
+  background: rgb(154, 145, 234);
+  position: absolute;
+  left: -40px;
+  top: 8px;
 }
 
 /* Colum 2 */
-.col-2{
-    position: relative;
-    flex-basis: 60%;
-    display: flex;
-    justify-content: center;
+.col-2 {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
 }
-.col-2 .hero{
-    width: 90%;
-    height: 90%;
+.col-2 .hero {
+  width: 90%;
+  height: 90%;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(Images/bg2.jpeg);
+  width: 100%;
+  height: 25vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: 15px;
+  margin-left: -5%;
+  padding-right: 10%;
+}
+.banner h4 {
+  color: #ffffff;
+  font-size: 50px;
+  margin-right: -10%;
+  font-family: "Great Vibes", cursive;
+}
+.banner h2 {
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: -10%;
+  padding: 10px 0;
+  font-family: "Kaushan Script", cursive;
+}
+.banner h2 span {
+  color: cyan;
+  font-family: "Kaushan Script", cursive;
+}
+
+.container2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-left: -5%;
+  margin-right: -5%;
+}
+.window {
+  width: 605px;
+  background-image: url(Images/bg1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  padding: 30px 30px 25px;
+  margin: 50px 0;
+  box-shadow: 0 0 20px 10px rgb(57, 47, 105);
+}
+.window header {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Lugrasimo", cursive;
+}
+.window .page {
+  margin: 35px 0;
+  /* color: yellow; */
+}
+.page .writing-area {
+  display: flex;
+  justify-content: center;
+}
+.writing-area i {
+  font-size: 15px;
+}
+.writing-area i:first-child {
+  margin: 3px 10px 0 0;
+}
+.writing-area i:last-child {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 0 3px 10px;
+}
+.writing-area #quote {
+  font-size: 26px;
+  text-align: center;
+  font-family: "Bad Script", cursive;
+  word-break: break-all;
+}
+.page .author {
+  display: flex;
+  font-size: 18px;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+.author span:first-child {
+  margin: -7px 5px 0 0;
+  font-family: monospace;
+}
+.author span:last-child {
+  font-family: "Bad Script", cursive;
+}
+.window .buttons {
+  border-top: 1px solid;
+}
+.buttons .features {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.features ul {
+  display: flex;
+}
+.features ul li {
+  list-style: none;
+  margin: 0 5px;
+  height: 47px;
+  width: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid;
+  transition: all 0.3s ease;
+}
+.features ul li:hover {
+  color: rgb(57, 55, 104);
+  background: white;
+}
+.features button {
+  border: none;
+  outline: none;
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+  font-style: 16px;
+  font-weight: bold;
+  padding: 13px 22px;
+  border-radius: 30px;
+  border: 2px solid;
+}
+.features button:hover {
+  background-color: rgb(57, 47, 105);
+  color: white;
+}
+button .loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.c-ban {
+  background-image: url(Images/bg3.jpeg);
+  height: 40vh;
+  flex-direction: column;
+}
+.c-ban h4 {
+  font-family: "Kaushan Script", cursive;
+  margin-left: 0%;
+  margin-right: -10%;
+}
+
+#contact ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-right: -10%;
+}
+#contact ul a {
+  text-decoration: none;
+  color: white;
+}
+#contact ul li {
+  list-style: none;
+  margin: 0 5px;
+  height: 47px;
+  width: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid;
+  transition: all 0.3s ease;
+}
+#contact ul li:hover {
+  color: black;
+  background: yellow;
 }
 
 /* Media Query */
-@media only screen and (max-width:700px) {
-    nav ul{
-        width: 100%;
-        background: rgb(57, 55, 104);
-        position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
-    }
-    nav ul li{
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    nav ul li a{
-        color: white;
-    }
-    .menu-icon{
-        display: block;
-    }
-    #menuList{
-        overflow: hidden;
-        transition: 0.5s;
-    }
-    .row{
-        flex-direction: column-reverse;
-        transition: 0.5s;
-    }
-    .col-2{
-        flex-basis: 100%;
-        margin-bottom: 50px;
-    }
-    .col-2 .hero{
-        width: 80%;
-    }
-    .col-1{
-        flex-basis: 100%;
-    }
-    .col-1 h2{
-        font-size: 35px;
-    }
-    .col-1 h3{
-        font-size: 23px;
-    }
-    .col-1 p{
-        margin: 30px 0;
-    }
-}
-
-#banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: url(Images/b3.jpeg);
+@media only screen and (max-width: 700px) {
+  nav ul {
     width: 100%;
-    height: 30vh;
-    background-size: cover;
-    background-position: center;
-}
-
-#banner h4{
-    color: #ffffff;
-    font-size: 50px;
-    font-family: 'Great Vibes', cursive;
-}
-
-#banner h2{
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 0;
-    font-family: 'Kaushan Script', cursive;
-}
-
-#banner h2 span{
-    color: cyan;
-    font-family: 'Kaushan Script', cursive;
+    background: rgb(57, 55, 104);
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: white;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #menuList {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .row {
+    flex-direction: column-reverse;
+    transition: 0.5s;
+  }
+  .col-2 {
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+  .col-2 .hero {
+    width: 80%;
+  }
+  .col-1 {
+    flex-basis: 100%;
+  }
+  .col-1 h2 {
+    font-size: 35px;
+  }
+  .col-1 h3 {
+    font-size: 23px;
+  }
+  .col-1 p {
+    margin: 30px 0;
+  }
 }

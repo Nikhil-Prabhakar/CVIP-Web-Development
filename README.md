@@ -4,7 +4,7 @@
 
 #### Normal Task
 
-Quote Generator Website - **Quote Oasis**
+Quote Generator Website - [**Quote Oasis**](https://quote-oasis.netlify.app/ "Quote Oasis") 
 
 Quote Oasis is a simple quote generator website that uses [Quotable](https://github.com/lukePeavey/quotable "Quotable") API by [Luke Peavey](https://github.com/lukePeavey "Luke Peavey").
 
